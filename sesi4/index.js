@@ -10,17 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Fungsi untuk menampilkan profil - alamat saat box diklik
-<script>
-        function toggleText(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "none" || element.style.display === "") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
 
 
 
