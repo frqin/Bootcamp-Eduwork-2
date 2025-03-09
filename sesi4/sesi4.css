@@ -1,0 +1,121 @@
+
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* About Me Section */
+.section-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(209, 194, 194, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.section-box:hover {
+    transform: scale(1.05);
+    background-color: #c9dcea;
+}
+
+/* Icon Circle */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    color: white;
+    font-size: 30px;
+}
+
+/* Specific Colors for Each Icon */
+.icon-profile { background: #007bff; } /* Biru */
+.icon-education { background: #28a745; } /* Hijau */
+.icon-location { background: #bc3e10; } /* Merah */
+
+/* Carousel */
+#projects {
+    padding: 50px 0;
+    background: transparent !important;
+    border-radius: 20px;
+}
+
+/* Ukuran Carousel */
+.carousel-item img {
+    border-radius: 15px;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Caption pada Carousel */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Ukuran Tombol Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .carousel-item img {
+        max-width: 90%;
+    }
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientTransition {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Terapkan ke Seluruh Halaman */
+html, body {
+    background: linear-gradient(-45deg, #b7b4b4, #87CEEB, #4682B4, #1E90FF, #123e6d, #021931, #000a14,#000000);
+    background-size: 400% 400%;
+    animation: gradientTransition 6s ease infinite;
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 123, 255, 0.8) !important;
+}
+
+/* Ukuran Gambar Project dengan Slider */
+.project-img {
+    width: 70%;
+    max-height: 400px;
+    object-fit: cover;
+    transition: width 0.7s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background: rgba(63, 51, 172, 0.8);
+    border-radius: 5px;
+}
+

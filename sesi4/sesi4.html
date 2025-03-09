@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AKU DANI KASEP </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sesi4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">FRQIN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/6281395496936" target="_blank">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Header -->
+    <header class="text-center py-5 text-white bg-dark">
+        <div class="container">
+            <img src="https://i.pinimg.com/736x/8a/7e/32/8a7e32210a6a7fae0f007c2cec948347.jpg" alt="Profile" class="profile-img mb-3">
+            <h1>Dani Firqin</h1>
+            <h2 class="text-warning">Web Developer</h2>
+            <!-- Ikon GitHub -->
+            <a href="https://github.com/frqin" target="_blank" class="text-white fs-3">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- About Me -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row mt-4">
+                <!-- Profil -->
+                <div class="col-md-4">
+                    <div class="section-box" onclick="toggleText('profilText')">
+                        <div class="icon-box icon-profile">
+                            <i class="bi bi-person-circle"></i> <!-- Ikon Profil -->
+                        </div>
+                        <p><strong>Profil</strong></p>
+                        <p id="profilText" style="display: none; font-weight: bold; color: #333;">
+                            Dani Firqin Fuadi <br>
+                            <a href="https://www.instagram.com/dani.frqin" target="_blank" style="margin-right: 10px;">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/frqin" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </p> 
+                    </div>
+                </div>
+    
+                <!-- Pendidikan -->
+                <div class="col-md-4">
+                    <div class="section-box">
+                        <div class="icon-box icon-education">
+                            <i class="bi bi-mortarboard"></i> <!-- Ikon Pendidikan -->
+                        </div>
+                        <p><strong>Universitas Muhammadiyah Bandung</strong></p>
+                    </div>
+                </div>
+    
+                <!-- Alamat -->
+                <div class="col-md-4">
+                    <div class="section-box" onclick="toggleText('alamatText')">
+                        <div class="icon-box icon-location">
+                            <i class="bi bi-geo-alt"></i> <!-- Ikon Lokasi -->
+                        </div>
+                        <p><strong>Alamat</strong></p>
+                        <p id="alamatText" style="display: none; font-weight: bold; color: #333;">
+                            Tanjungsari - Sumedang
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        function toggleText(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+    
+    
+    
+
+    <!-- Projects with Carousel -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-white">My Projects</h2>
+    
+            <!-- Slider untuk mengatur ukuran -->
+            <div class="text-center my-3">
+                <label for="sizeSlider" class="text-white">Adjust Project Image Size:</label>
+                <input type="range" id="sizeSlider" min="30" max="100" value="70" class="form-range">
+            </div>
+    
+            <div id="projectCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/port 2.png" class="d-block mx-auto project-img" alt="Project 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/port.png" class="d-block mx-auto project-img" alt="Project 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>Dani Firqin Fuadi</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
